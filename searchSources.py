@@ -13,8 +13,8 @@ from langchain.agents import initialize_agent
 from googleapiclient.discovery import build 
 
 
-os.environ["GOOGLE_CSE_ID"] = "10ba63ac3801f4506"
-os.environ["GOOGLE_API_KEY"] = "AIzaSyDKG7jdOH0CmF1WgAa5gVYJjVFNpc3yaO0"
+os.environ["GOOGLE_CSE_ID"] = ""
+os.environ["GOOGLE_API_KEY"] = ""
 linkList =[]
 
 from googleapiclient.discovery import build
