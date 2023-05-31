@@ -1,2 +1,2 @@
 # Projetos_Facul
-Projetos Facul principalmente Python
+Projetos Facul, no Geral usando Python
