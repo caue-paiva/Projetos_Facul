@@ -62,7 +62,7 @@ class CustomSearchTool(BaseTool):
 
     async def _arun(self, query: str) -> str:
        
-        return self._run(query)  # provide a simple synchronous implementation
+        return self._run(query)  
 
 
 
@@ -84,6 +84,6 @@ print(agent_chain.run(input="sua pergunta"))
 
 contador=0     
 
-while contador < 4:   //imprime os links
+while contador < 4:   //imprime os links da busca na web
     print("Link: ", linkList[contador])
     contador+=1
