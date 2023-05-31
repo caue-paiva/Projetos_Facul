@@ -40,12 +40,12 @@ class GoogleSearch():
 class CustomSearchTool(BaseTool):
     name = "SearchEngine"
     description = (
-        "Use this tool to answer questions about latest news and events, as well as about ages and famous people prompted to you get the links and print them to the user."
-        "This tool gives you access to a search engine for general questions."
+        "Use esta ferramenta para responder a perguntas sobre últimas notícias e eventos, bem como sobre idades e pessoas famosas solicitadas para você obter os links e imprimi-los para o usuário."
+        "Esta ferramenta te dá acesso a um motor de busca para questões gerais."
     )
 
     def _run(self, query: str) -> str:
-        """Use the tool."""
+       
         google_search = GoogleSearch()
         results = google_search.search(query)
 
@@ -61,7 +61,7 @@ class CustomSearchTool(BaseTool):
         return response_with_links
 
     async def _arun(self, query: str) -> str:
-        """Use the tool asynchronously."""
+       
         return self._run(query)  # provide a simple synchronous implementation
 
 
@@ -78,12 +78,12 @@ tools = [CustomSearchTool()]
 llm=OpenAI(temperature=0)
 agent_chain = initialize_agent(tools, llm, agent=AgentType.CONVERSATIONAL_REACT_DESCRIPTION, verbose=True, memory=memory)
 
-print(agent_chain.run(input="did Ron desantis announce his presidential run?"))
+print(agent_chain.run(input="sua pergunta"))
 
 
 
-contador=0
+contador=0     
 
-while contador < 4:
+while contador < 4:   //imprime os links
     print("Link: ", linkList[contador])
     contador+=1
