@@ -13,8 +13,8 @@ from langchain.agents import initialize_agent
 from googleapiclient.discovery import build 
 
 
-os.environ["GOOGLE_CSE_ID"] = ""
-os.environ["GOOGLE_API_KEY"] = ""
+os.environ["GOOGLE_CSE_ID"] = "seu ID de pesquisa programável"   //https://programmablesearchengine.google.com/controlpanel/create 
+os.environ["GOOGLE_API_KEY"] = " sua API do google"    //https://console.cloud.google.com/apis/credentials 
 linkList =[]
 
 from googleapiclient.discovery import build
